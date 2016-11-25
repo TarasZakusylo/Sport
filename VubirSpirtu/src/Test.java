@@ -154,7 +154,7 @@ public class Test extends JFrame {
 		getContentPane().add(choice_tema);
 
 		JButton btnNewButton = new JButton();
-		btnNewButton.setIcon(new ImageIcon("C:\\Users\\Zakk\\workspace\\VubirSpirtu\\res\\icon_DlaVchutela.png"));
+		btnNewButton.setIcon(new ImageIcon("res\\icon_DlaVchutela.png"));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 
