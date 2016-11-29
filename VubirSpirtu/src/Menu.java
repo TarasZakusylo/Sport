@@ -15,7 +15,7 @@ public class Menu extends JFrame {
 	 
     	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     	setSize(800,600);
-//    	setResizable(false);
+    	setResizable(false);
     	setLocationRelativeTo(null);
     	getContentPane().setLayout(null);   
         	
@@ -62,6 +62,12 @@ public class Menu extends JFrame {
     	getContentPane().add(b_Pravula);
     	
     	JButton b_Normu = new JButton("\u041D\u043E\u0440\u043C\u0430\u0442\u0438\u0432\u0438");
+    	b_Normu.addActionListener(new ActionListener() {
+    		public void actionPerformed(ActionEvent e) {
+    			Normatuvu normatuvu = new Normatuvu (); 
+    			setVisible(false);
+    		}
+    	});
     	b_Normu.setForeground(Color.MAGENTA);
     	b_Normu.setBounds(30, 271, 721, 37);
     	getContentPane().add(b_Normu);

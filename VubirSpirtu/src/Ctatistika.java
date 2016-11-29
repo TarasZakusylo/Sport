@@ -25,6 +25,7 @@ public class Ctatistika extends JFrame{
 		b_Menu.setBounds(705, 0, 89, 23);
 		getContentPane().add(b_Menu);
     	
+
     	setVisible(true);
 		
 	}
