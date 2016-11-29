@@ -83,6 +83,12 @@ public class Menu extends JFrame {
     	getContentPane().add(b_Rozklad);
     	
     	JButton b_Statustuka = new JButton("\u0417\u0432\u0456\u0442 / \u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430");
+    	b_Statustuka.addActionListener(new ActionListener() {
+    		public void actionPerformed(ActionEvent arg0) {
+    			Ctatistika ctatistika = new Ctatistika () ; 
+    			setVisible(false);
+    		}
+    	});
     	b_Statustuka.setForeground(Color.MAGENTA);
     	b_Statustuka.setBounds(30, 364, 721, 37);
     	getContentPane().add(b_Statustuka);
