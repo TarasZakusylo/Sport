@@ -103,6 +103,12 @@ public class PravulaMenu extends JFrame{
 	    	getContentPane().add(button_1);
 	    	
 	    	JButton button_2 = new JButton("\u0411\u0430\u0441\u043A\u0435\u0442\u0431\u043E\u043B");
+	    	button_2.addActionListener(new ActionListener() {
+	    		public void actionPerformed(ActionEvent e) {
+	    			 PravulaBasketbol pravulaBasketbol  = new PravulaBasketbol () ;
+	 	    			setVisible(false);
+	    		}
+	    	});
 	    	button_2.setForeground(Color.BLUE);
 	    	button_2.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 	    	button_2.setBounds(303, 30, 160, 50);

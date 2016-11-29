@@ -157,7 +157,7 @@ public class TestPrepod extends JFrame {
 		JButton button = new JButton("\u0414\u043E \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0438");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Ctatistika ctatistika = new Ctatistika () ; 
+				Statistika ctatistika = new Statistika () ; 
 				setVisible(false);
 			}
 		});

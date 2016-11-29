@@ -4,10 +4,13 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+import javax.swing.ImageIcon;
 
-public class Ctatistika extends JFrame{
+public class Rozklad extends JFrame{
 
-	public Ctatistika() { 
+	public Rozklad() { 
 	  	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     	setSize(800,600);
 //    	setResizable(false);
@@ -22,12 +25,17 @@ public class Ctatistika extends JFrame{
 				setVisible(false);
 			}
 		});
-		b_Menu.setBounds(705, 0, 89, 23);
+		b_Menu.setBounds(685, 22, 89, 23);
 		getContentPane().add(b_Menu);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("res/Rozklad.png"));
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setBounds(0, 4, 784, 558);
+		getContentPane().add(lblNewLabel);
     	
 
     	setVisible(true);
 		
 	}
-
 }

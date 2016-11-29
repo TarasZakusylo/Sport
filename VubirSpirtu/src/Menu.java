@@ -84,6 +84,12 @@ public class Menu extends JFrame {
     	getContentPane().add(b_Test);
     	
     	JButton b_Rozklad = new JButton("\u0420\u043E\u0437\u043A\u043B\u0430\u0434 \u0443\u0440\u043E\u043A\u0456\u0432");
+    	b_Rozklad.addActionListener(new ActionListener() {
+    		public void actionPerformed(ActionEvent arg0) {
+    			Rozklad rozklad = new Rozklad () ;
+    			setVisible(false);
+    		}
+    	});
     	b_Rozklad.setForeground(Color.MAGENTA);
     	b_Rozklad.setBounds(30, 316, 721, 37);
     	getContentPane().add(b_Rozklad);
@@ -91,7 +97,7 @@ public class Menu extends JFrame {
     	JButton b_Statustuka = new JButton("\u0417\u0432\u0456\u0442 / \u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430");
     	b_Statustuka.addActionListener(new ActionListener() {
     		public void actionPerformed(ActionEvent arg0) {
-    			Ctatistika ctatistika = new Ctatistika () ; 
+    			Statistika ctatistika = new Statistika () ; 
     			setVisible(false);
     		}
     	});
