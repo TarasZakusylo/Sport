@@ -115,12 +115,25 @@ public class PravulaMenu extends JFrame{
 	    	getContentPane().add(button_2);
 	    	
 	    	JButton button_3 = new JButton("\u041B\u0435\u0433\u043A\u0430 \u0430\u0442\u043B\u0435\u0442\u0438\u043A\u0430");
+	    	button_3.addActionListener(new ActionListener() {
+	    		public void actionPerformed(ActionEvent arg0) {
+
+	    			Atletik atletik  = new Atletik () ;
+ 	    			setVisible(false);
+	    		}
+	    	});
 	    	button_3.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 	    	button_3.setForeground(Color.BLUE);
 	    	button_3.setBounds(615, 30, 169, 50);
 	    	getContentPane().add(button_3);
 	    	
 	    	JButton button_4 = new JButton("\u0422\u0435\u043D\u0456\u0441");
+	    	button_4.addActionListener(new ActionListener() {
+	    		public void actionPerformed(ActionEvent arg0) {
+	    			PravulaTenis pravulaTenis  = new PravulaTenis () ;
+ 	    			setVisible(false);
+	    		}
+	    	});
 	    	button_4.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 	    	button_4.setForeground(Color.BLUE);
 	    	button_4.setBounds(460, 30, 160, 50);
@@ -141,9 +154,9 @@ public class PravulaMenu extends JFrame{
 	    	    	l_logo_emblema_basketbol.setBounds(0, 0, 0, 0);
 	    	    	l_logo_emblema_futbol.setBounds(0, 0, 0, 0);
 	    	    	l_logo_emblema_voleybol.setBounds(0, 0, 0, 0);
-	    	    
+	    	        	    	
 	    	    	scrollPane.setBounds(41, 91, 243, 425);
-	    	    	
+	    	
 	    	    	vpravuSpusok = new VpravuSpusok();
 	    	    	
 	    	    	list = new JList<String>(vpravuSpusok);
@@ -151,28 +164,7 @@ public class PravulaMenu extends JFrame{
 	    	    		@Override
 	    	    		public void mouseClicked(MouseEvent arg0) {
 	     
-	    	    			BufferedReader reader;
-	    					try {
-	    						reader = new BufferedReader(
-	    								new FileReader(s_nazva + list.getSelectedValue() + "/" + "harakteristici.txt"));
-
-	    						String line;
-	    						List<String> lines = new ArrayList<String>();
-
-	    						while ((line = reader.readLine()) != null) {
-	    							lines.add(line);
-	    						}
-	    						String[] linesAsArray = lines.toArray(new String[lines.size()]);
-
-	    						for (int i = 0; i < linesAsArray.length; i++) {
-	    							s_k_vuvestuProfil = s_k_vuvestuProfil + linesAsArray[i] + "\n";
-	    						}
-
-	    					} catch (Exception e1) {}
-
-	    										
-//	    					textArea.setText(s_k_vuvestuProfil);
-//	    					s_k_vuvestuProfil = "";    			
+	    	    			JOptionPane.showMessageDialog(null, "Дана методологія розробляється.\nВибачте за тимчасові незручності.");   	 			
 	     
 	    	    		}
 	    	    	});

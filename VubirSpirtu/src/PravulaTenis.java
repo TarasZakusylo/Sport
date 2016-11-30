@@ -21,12 +21,12 @@ import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.SwingConstants;
 
-public class PravulaBasketbol extends JFrame {
+public class PravulaTenis extends JFrame {
  
-	String s_nazva = "res/pravila+taktika/Basketbol";
+	String s_nazva = "res/pravila+taktika/Tenis";
 	private static BufferedImage image_vuvestuProfil;
 
-	public PravulaBasketbol() {
+	public PravulaTenis() {
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(800, 600);
@@ -103,12 +103,12 @@ public class PravulaBasketbol extends JFrame {
 		label.setBounds(10, 455, 769, 29);
 		panel_taktika.add(label);
 		
-		JLabel label_1 = new JLabel("\u0417\u0430\u0445\u0438\u0441\u0442 \u0456\u0437 \u0437\u0430\u0441\u043B\u043E\u043D\u043E\u043C");
+		JLabel label_1 = new JLabel("\u041C'\u044F\u043A\u0438\u0439 \u043F\u0440\u0438\u0439\u043E\u043C\r\n");
 		label_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				try{
-					d.browse(new URI("http://ballplay.narod.ru/boribazaclohami.htm"));
+					d.browse(new URI("http://ttdubna.ru/tactics/310-tactika-priema-podach"));
 					}catch(Exception e1){}
 			}
 		});
@@ -118,12 +118,12 @@ public class PravulaBasketbol extends JFrame {
 		label_1.setBounds(46, 424, 226, 20);
 		panel_taktika.add(label_1);
 		
-		JLabel label_2 = new JLabel("\u041D\u0430\u043F\u0430\u0434 \u043F\u0440\u043E\u0442\u0438 \u0437\u043E\u043D\u0438 2-1-2");
+		JLabel label_2 = new JLabel("\u0413\u0440\u0430 \u0432 \u043F\u0430\u0440\u0456");
 		label_2.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				try{
-					d.browse(new URI("http://ballplay.narod.ru/hapadehie_protiv_zohi_dba_odin_dva.htm"));
+					d.browse(new URI("http://ttdubna.ru/tactics/317-tactika-igru-v-pare"));
 					}catch(Exception e1){}
 			}
 		});
@@ -133,27 +133,27 @@ public class PravulaBasketbol extends JFrame {
 		label_2.setBounds(46, 355, 226, 20);
 		panel_taktika.add(label_2);
 		
-		JLabel label_3 = new JLabel("\u0417\u043E\u043D\u0430\u043B\u044C\u043D\u0438\u0439 \u0437\u0430\u0445\u0438\u0441\u0442");
+		JLabel label_3 = new JLabel("\u042F\u043A \u0432\u0438\u0432\u0447\u0438\u0442\u0438 \u043F\u0440\u043E\u0442\u0438\u0432\u043D\u0438\u043A\u0430 ?");
 		label_3.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				try{
-					d.browse(new URI("http://www.offsport.ru/basketball/52/zonnaja-zashhita.shtml"));
+					d.browse(new URI("http://ttdubna.ru/tactics/320-kak-izuchat-sopernika"));
 					}catch(Exception e1){}
 			}
 		});
 		label_3.setHorizontalAlignment(SwingConstants.LEFT);
 		label_3.setForeground(Color.ORANGE);
 		label_3.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 20));
-		label_3.setBounds(46, 288, 226, 20);
+		label_3.setBounds(46, 288, 313, 20);
 		panel_taktika.add(label_3);
 		
-		JLabel label_4 = new JLabel("\u0412\u0456\u0441\u0456\u043C\u043A\u0430");
+		JLabel label_4 = new JLabel("\u041A\u043E\u043C\u0431\u0456\u043D\u0430\u0446\u0456\u0457 \u043D\u0430\u043F\u0430\u0434\u0443");
 		label_4.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				try{
-					d.browse(new URI("https://streetball-omsk.ru/stati/napadenie/vosmerka-v-basketbole"));
+					d.browse(new URI("http://ttdubna.ru/tactics/524-kombinaczii-napadayushhego-igroka"));
 					}catch(Exception e1){}
 			}
 		});
@@ -163,12 +163,12 @@ public class PravulaBasketbol extends JFrame {
 		label_4.setBounds(46, 224, 226, 20);
 		panel_taktika.add(label_4);
 		
-		JLabel label_5 = new JLabel("\u0414\u043E\u0432\u0433\u0438\u0439 \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044C");
+		JLabel label_5 = new JLabel("\u041A\u043E\u043C\u0431\u0456\u043D\u0430\u0446\u0456\u0457 \u0437\u0430\u0445\u0438\u0441\u0442\u0443");
 		label_5.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				try{
-					d.browse(new URI("https://streetball-omsk.ru/stati/napadenie/dlitelnyi-kontrol-myacha"));
+					d.browse(new URI("http://ttdubna.ru/tactics/525-kombinaczii-zashhitnika-v-nastolnom-tennise"));
 					}catch(Exception e1){}
 			}
 		});
@@ -178,12 +178,12 @@ public class PravulaBasketbol extends JFrame {
 		label_5.setBounds(46, 155, 226, 20);
 		panel_taktika.add(label_5);
 		
-		JLabel label_6 = new JLabel("\u0412\u0456\u0434\u0434\u0430\u0439 \u0442\u0430 \u0456\u0434\u0438");
+		JLabel label_6 = new JLabel("\u041E\u0431\u0435\u0440\u0442\u0430\u043D\u043D\u044F \u043C'\u044F\u0447\u0430");
 		label_6.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				try{
-					d.browse(new URI("https://streetball-omsk.ru/stati/napadenie/sistema-otday-i-vyjdi"));
+					d.browse(new URI("http://www.pingpong777.com/news/ne-beyte-po-myachu-pryamo-vrashayte-ego/"));
 					}catch(Exception e1){}
 			}
 		});
@@ -193,12 +193,12 @@ public class PravulaBasketbol extends JFrame {
 		label_6.setBounds(46, 91, 226, 20);
 		panel_taktika.add(label_6);
 		
-		JLabel label_7 = new JLabel("\u0428\u0432\u0438\u0434\u043A\u0438\u0439 \u043F\u0440\u043E\u0440\u0438\u0432");
+		JLabel label_7 = new JLabel("\u041A\u043E\u0440\u043E\u0442\u043A\u0456 \u043F\u043E\u0434\u0430\u0447\u0456");
 		label_7.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				try{
-					d.browse(new URI("https://streetball-omsk.ru/stati/napadenie/bystryj-proryv-v-basketbole"));
+					d.browse(new URI("http://www.pingpong777.com/news/plyusi-i-minusi-korotkih-podac/"));
 					}catch(Exception e1){}
 			}
 		});

@@ -93,9 +93,15 @@ public class EC_rezultat extends JFrame {
 		label_3.setBounds(10, 271, 764, 73);
 		getContentPane().add(label_3);
 		
-		JButton btnGhfdbkf = new JButton("\u041F\u0440\u0430\u0432\u0438\u043B\u0430 ??????");
-		btnGhfdbkf.setBounds(226, 355, 328, 59);
-		getContentPane().add(btnGhfdbkf);
+		JButton btnPravula = new JButton("\u041F\u0440\u0430\u0432\u0438\u043B\u0430 \u0442\u0430 \u0442\u0430\u043A\u0442\u0438\u043A\u0430");
+		btnPravula.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				PravulaMenu pravulaMenu = new PravulaMenu ();
+				setVisible(false);
+			}
+		});
+		btnPravula.setBounds(226, 355, 328, 59);
+		getContentPane().add(btnPravula);
 		setVisible(true);
 		
 		
