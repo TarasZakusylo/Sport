@@ -151,7 +151,7 @@ public class Statistika extends JFrame{
 		getContentPane().add(label_5);
 		
 		JLabel label_6 = new JLabel("");
-		label_6.setIcon(new ImageIcon("C:\\Users\\Zakk\\Desktop\\fonstola.ru-55651.jpg"));
+		label_6.setIcon(new ImageIcon("res/fon/Statistika.png"));
 		label_6.setBounds(0, 0, 794, 572);
 		getContentPane().add(label_6);
     	
