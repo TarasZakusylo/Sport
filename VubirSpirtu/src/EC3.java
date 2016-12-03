@@ -3,6 +3,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -11,9 +12,10 @@ import javax.swing.JSlider;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import javax.swing.ImageIcon;
 
 public class EC3 extends JFrame {
+
+	private static final long serialVersionUID = 1L;
 
 	private JSlider sl_putanna12;
 	private JSlider sl_putanna13;
@@ -52,7 +54,7 @@ public class EC3 extends JFrame {
 		JButton b_menu = new JButton("\u041C\u0435\u043D\u044E");
 		b_menu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Menu menu = new Menu("Фізична культура в школі");
+				new Menu("Фізична культура в школі");
 				setVisible(false);
 			}
 		});
@@ -80,7 +82,7 @@ public class EC3 extends JFrame {
 
 		sl_putanna12 = new JSlider(0, 1, 5, i_sl_putanna12);
 		getContentPane().add(l_komentar1);
-		sl_putanna12.setMinorTickSpacing(1); 
+		sl_putanna12.setMinorTickSpacing(1);
 		sl_putanna12.setOpaque(false);
 		sl_putanna12.setPaintTicks(true);
 		sl_putanna12.setPaintLabels(true);
@@ -503,19 +505,19 @@ public class EC3 extends JFrame {
 									&& i_sl_putanna15 == 5)) {
 						dostovirnist++;
 					}
-					
-					if (ii_sl_putanna0 == 3 && ii_sl_putanna1 == 3 && ii_sl_putanna2 == 3 && ii_sl_putanna3 == 3){
+
+					if (ii_sl_putanna0 == 3 && ii_sl_putanna1 == 3 && ii_sl_putanna2 == 3 && ii_sl_putanna3 == 3) {
 						dostovirnist++;
 					}
 
-					if (ii_sl_putanna4 == 3 && ii_sl_putanna5 == 3 && ii_sl_putanna6 == 3	&& ii_sl_putanna7 == 3){
+					if (ii_sl_putanna4 == 3 && ii_sl_putanna5 == 3 && ii_sl_putanna6 == 3 && ii_sl_putanna7 == 3) {
 						dostovirnist++;
 					}
-						
-					if (ii_sl_putanna8 == 3 && ii_sl_putanna9 == 3 && i_sl_putanna10 == 3	&& i_sl_putanna11 == 3){
+
+					if (ii_sl_putanna8 == 3 && ii_sl_putanna9 == 3 && i_sl_putanna10 == 3 && i_sl_putanna11 == 3) {
 						dostovirnist++;
 					}
-					if (i_sl_putanna12 == 3 && i_sl_putanna13 == 3 && i_sl_putanna14 == 3  && i_sl_putanna15 == 3) {
+					if (i_sl_putanna12 == 3 && i_sl_putanna13 == 3 && i_sl_putanna14 == 3 && i_sl_putanna15 == 3) {
 						dostovirnist++;
 					}
 
@@ -526,7 +528,7 @@ public class EC3 extends JFrame {
 						indekator_dostovirnosti = 1;
 					}
 					dostovirnist = 0;
-					EC_rezultat ec_rezultat = new EC_rezultat(rezultat , rezultat1, indekator_dostovirnosti);
+					new EC_rezultat(rezultat, rezultat1, indekator_dostovirnosti);
 					setVisible(false);
 				}
 			}
@@ -537,7 +539,7 @@ public class EC3 extends JFrame {
 		JButton b_nazad1 = new JButton("\u041D\u0430\u0437\u0430\u0434 3/4");
 		b_nazad1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				EC2 ec2 = new EC2("EC", ii_sl_putanna0, ii_sl_putanna1, ii_sl_putanna2, ii_sl_putanna3, ii_sl_putanna4,
+				new EC2("EC", ii_sl_putanna0, ii_sl_putanna1, ii_sl_putanna2, ii_sl_putanna3, ii_sl_putanna4,
 						ii_sl_putanna5, ii_sl_putanna6, ii_sl_putanna7, ii_sl_putanna8, ii_sl_putanna9, ii_sl_putanna10,
 						ii_sl_putanna11, i_sl_putanna12, i_sl_putanna13, i_sl_putanna14, i_sl_putanna15);
 				setVisible(false);
@@ -546,7 +548,7 @@ public class EC3 extends JFrame {
 		});
 		b_nazad1.setBounds(-1, 526, 141, 36);
 		getContentPane().add(b_nazad1);
-		
+
 		JLabel label_20 = new JLabel("");
 		label_20.setIcon(new ImageIcon("res/fon/EC3.png"));
 		label_20.setBounds(-10, 0, 794, 572);

@@ -7,52 +7,52 @@ public class TestMath {
 
 		switch (metka_result) {
 		case 0: {
-			TestPutanna TestPutanna = new TestPutanna(s_choice_klas, s_choice_tema, s_Name, result, testNomerPutanna0,
-					testNomerPutanna1, metka_result, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4,
-					testNomerPutanna5, testNomerPutanna6, testNomerPutanna7, testNomerPutanna8, testNomerPutanna9,
-					testNomerPutanna10, testNomerPutanna11);
+			new TestPutanna(s_choice_klas, s_choice_tema, s_Name, result, testNomerPutanna0, testNomerPutanna1,
+					metka_result, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4, testNomerPutanna5,
+					testNomerPutanna6, testNomerPutanna7, testNomerPutanna8, testNomerPutanna9, testNomerPutanna10,
+					testNomerPutanna11);
 			break;
 		}
 		case 1: {
-			TestPutanna TestPutanna = new TestPutanna(s_choice_klas, s_choice_tema, s_Name, result, testNomerPutanna2,
-					testNomerPutanna3, metka_result, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4,
-					testNomerPutanna5, testNomerPutanna6, testNomerPutanna7, testNomerPutanna8, testNomerPutanna9,
-					testNomerPutanna10, testNomerPutanna11);
+			new TestPutanna(s_choice_klas, s_choice_tema, s_Name, result, testNomerPutanna2, testNomerPutanna3,
+					metka_result, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4, testNomerPutanna5,
+					testNomerPutanna6, testNomerPutanna7, testNomerPutanna8, testNomerPutanna9, testNomerPutanna10,
+					testNomerPutanna11);
 			break;
 		}
 		case 2: {
-			TestPutanna TestPutanna = new TestPutanna(s_choice_klas, s_choice_tema, s_Name, result, testNomerPutanna4,
-					testNomerPutanna5, metka_result, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4,
-					testNomerPutanna5, testNomerPutanna6, testNomerPutanna7, testNomerPutanna8, testNomerPutanna9,
-					testNomerPutanna10, testNomerPutanna11);
+			new TestPutanna(s_choice_klas, s_choice_tema, s_Name, result, testNomerPutanna4, testNomerPutanna5,
+					metka_result, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4, testNomerPutanna5,
+					testNomerPutanna6, testNomerPutanna7, testNomerPutanna8, testNomerPutanna9, testNomerPutanna10,
+					testNomerPutanna11);
 			break;
 		}
 		case 3: {
-			TestPutanna TestPutanna = new TestPutanna(s_choice_klas, s_choice_tema, s_Name, result, testNomerPutanna6,
-					testNomerPutanna7, metka_result, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4,
-					testNomerPutanna5, testNomerPutanna6, testNomerPutanna7, testNomerPutanna8, testNomerPutanna9,
-					testNomerPutanna10, testNomerPutanna11);
+			new TestPutanna(s_choice_klas, s_choice_tema, s_Name, result, testNomerPutanna6, testNomerPutanna7,
+					metka_result, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4, testNomerPutanna5,
+					testNomerPutanna6, testNomerPutanna7, testNomerPutanna8, testNomerPutanna9, testNomerPutanna10,
+					testNomerPutanna11);
 			break;
 		}
 		case 4: {
-			TestPutanna TestPutanna = new TestPutanna(s_choice_klas, s_choice_tema, s_Name, result, testNomerPutanna8,
-					testNomerPutanna9, metka_result, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4,
-					testNomerPutanna5, testNomerPutanna6, testNomerPutanna7, testNomerPutanna8, testNomerPutanna9,
-					testNomerPutanna10, testNomerPutanna11);
+			new TestPutanna(s_choice_klas, s_choice_tema, s_Name, result, testNomerPutanna8, testNomerPutanna9,
+					metka_result, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4, testNomerPutanna5,
+					testNomerPutanna6, testNomerPutanna7, testNomerPutanna8, testNomerPutanna9, testNomerPutanna10,
+					testNomerPutanna11);
 			break;
 		}
 		case 5: {
-			TestPutanna TestPutanna = new TestPutanna(s_choice_klas, s_choice_tema, s_Name, result, testNomerPutanna10,
-					testNomerPutanna11, metka_result, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4,
-					testNomerPutanna5, testNomerPutanna6, testNomerPutanna7, testNomerPutanna8, testNomerPutanna9,
-					testNomerPutanna10, testNomerPutanna11);
+			new TestPutanna(s_choice_klas, s_choice_tema, s_Name, result, testNomerPutanna10, testNomerPutanna11,
+					metka_result, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4, testNomerPutanna5,
+					testNomerPutanna6, testNomerPutanna7, testNomerPutanna8, testNomerPutanna9, testNomerPutanna10,
+					testNomerPutanna11);
 			break;
 		}
 		}
 
-		 if (metka_result == 6) {
-		 TestResult testResult = new TestResult (s_choice_klas, s_choice_tema , s_Name ,result) ;
-		 }
+		if (metka_result == 6) {
+			new TestResult(s_choice_klas, s_choice_tema, s_Name, result);
+		}
 
 	}
 

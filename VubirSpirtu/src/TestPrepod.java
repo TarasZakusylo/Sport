@@ -15,19 +15,16 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingConstants;
-import javax.swing.ImageIcon;
 
 public class TestPrepod extends JFrame {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	private String s_k_vuvestuProfil = "";
@@ -69,12 +66,12 @@ public class TestPrepod extends JFrame {
 	private Choice choice_tema;
 
 	private JTextArea textArea_result;
-	
-	int i_dali = 0; 
+
+	int i_dali = 0;
 	private JLabel label_2;
 
 	public TestPrepod() {
-		
+
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(800, 600);
 		setResizable(false);
@@ -96,7 +93,7 @@ public class TestPrepod extends JFrame {
 		JButton b_Nazad = new JButton("\u041D\u0430\u0437\u0430\u0434");
 		b_Nazad.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Test test = new Test();
+				new Test();
 				setVisible(false);
 			}
 		});
@@ -159,7 +156,7 @@ public class TestPrepod extends JFrame {
 		JButton button = new JButton("\u0414\u043E \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0438");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Statistika ctatistika = new Statistika () ; 
+				new Statistika();
 				setVisible(false);
 			}
 		});
@@ -170,13 +167,13 @@ public class TestPrepod extends JFrame {
 		JButton button_1 = new JButton("\u0412\u0438\u0434\u0430\u043B\u0438\u0442\u0438 \u043F\u043E\u043B\u0435");
 		button_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+
 				if (i_dali == 0) {
 					JOptionPane.showMessageDialog(null,
 							"Спочатку оперіть клас та тему, а потім виберіть поля які Ви хочете видалити");
 				} else {
-				ocustutu();
-				paintCheckbox();
+					ocustutu();
+					paintCheckbox();
 				}
 			}
 		});
@@ -187,7 +184,7 @@ public class TestPrepod extends JFrame {
 		checkbox = new Checkbox();
 		getContentPane().add(checkbox);
 		checkbox.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
+			public void itemStateChanged(ItemEvent e) {
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
 				checkbox_3.setState(false);
@@ -202,14 +199,14 @@ public class TestPrepod extends JFrame {
 				checkbox_12.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_1 = new Checkbox();
 		getContentPane().add(checkbox_1);
 		checkbox_1.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_2.setState(false);
 				checkbox_3.setState(false);
 				checkbox_4.setState(false);
@@ -223,14 +220,14 @@ public class TestPrepod extends JFrame {
 				checkbox_12.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_2 = new Checkbox();
 		getContentPane().add(checkbox_2);
 		checkbox_2.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_3.setState(false);
 				checkbox_4.setState(false);
@@ -244,14 +241,14 @@ public class TestPrepod extends JFrame {
 				checkbox_12.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_3 = new Checkbox();
 		getContentPane().add(checkbox_3);
 		checkbox_3.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
 				checkbox_4.setState(false);
@@ -265,17 +262,17 @@ public class TestPrepod extends JFrame {
 				checkbox_12.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_4 = new Checkbox();
 		getContentPane().add(checkbox_4);
 		checkbox_4.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
-				checkbox_3.setState(false); 
+				checkbox_3.setState(false);
 				checkbox_5.setState(false);
 				checkbox_6.setState(false);
 				checkbox_7.setState(false);
@@ -286,14 +283,14 @@ public class TestPrepod extends JFrame {
 				checkbox_12.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_9 = new Checkbox();
 		getContentPane().add(checkbox_9);
 		checkbox_9.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
 				checkbox_3.setState(false);
@@ -301,47 +298,47 @@ public class TestPrepod extends JFrame {
 				checkbox_5.setState(false);
 				checkbox_6.setState(false);
 				checkbox_7.setState(false);
-				checkbox_8.setState(false); 
+				checkbox_8.setState(false);
 				checkbox_10.setState(false);
 				checkbox_11.setState(false);
 				checkbox_12.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_8 = new Checkbox();
 		getContentPane().add(checkbox_8);
 		checkbox_8.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
 				checkbox_3.setState(false);
 				checkbox_4.setState(false);
 				checkbox_5.setState(false);
 				checkbox_6.setState(false);
-				checkbox_7.setState(false); 
+				checkbox_7.setState(false);
 				checkbox_9.setState(false);
 				checkbox_10.setState(false);
 				checkbox_11.setState(false);
 				checkbox_12.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_7 = new Checkbox();
 		getContentPane().add(checkbox_7);
 		checkbox_7.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
 				checkbox_3.setState(false);
 				checkbox_4.setState(false);
 				checkbox_5.setState(false);
-				checkbox_6.setState(false); 
+				checkbox_6.setState(false);
 				checkbox_8.setState(false);
 				checkbox_9.setState(false);
 				checkbox_10.setState(false);
@@ -349,19 +346,19 @@ public class TestPrepod extends JFrame {
 				checkbox_12.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_6 = new Checkbox();
 		getContentPane().add(checkbox_6);
 		checkbox_6.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
 				checkbox_3.setState(false);
 				checkbox_4.setState(false);
-				checkbox_5.setState(false); 
+				checkbox_5.setState(false);
 				checkbox_7.setState(false);
 				checkbox_8.setState(false);
 				checkbox_9.setState(false);
@@ -370,18 +367,18 @@ public class TestPrepod extends JFrame {
 				checkbox_12.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_5 = new Checkbox();
 		getContentPane().add(checkbox_5);
 		checkbox_5.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
 				checkbox_3.setState(false);
-				checkbox_4.setState(false); 
+				checkbox_4.setState(false);
 				checkbox_6.setState(false);
 				checkbox_7.setState(false);
 				checkbox_8.setState(false);
@@ -391,14 +388,14 @@ public class TestPrepod extends JFrame {
 				checkbox_12.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_13 = new Checkbox();
 		getContentPane().add(checkbox_13);
 		checkbox_13.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
 				checkbox_3.setState(false);
@@ -410,16 +407,16 @@ public class TestPrepod extends JFrame {
 				checkbox_9.setState(false);
 				checkbox_10.setState(false);
 				checkbox_11.setState(false);
-				checkbox_12.setState(false); 
+				checkbox_12.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_12 = new Checkbox();
 		getContentPane().add(checkbox_12);
 		checkbox_12.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
 				checkbox_3.setState(false);
@@ -430,17 +427,17 @@ public class TestPrepod extends JFrame {
 				checkbox_8.setState(false);
 				checkbox_9.setState(false);
 				checkbox_10.setState(false);
-				checkbox_11.setState(false); 
+				checkbox_11.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_11 = new Checkbox();
 		getContentPane().add(checkbox_11);
 		checkbox_11.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
 				checkbox_3.setState(false);
@@ -450,18 +447,18 @@ public class TestPrepod extends JFrame {
 				checkbox_7.setState(false);
 				checkbox_8.setState(false);
 				checkbox_9.setState(false);
-				checkbox_10.setState(false); 
+				checkbox_10.setState(false);
 				checkbox_12.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_10 = new Checkbox();
 		getContentPane().add(checkbox_10);
 		checkbox_10.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
 				checkbox_3.setState(false);
@@ -470,19 +467,19 @@ public class TestPrepod extends JFrame {
 				checkbox_6.setState(false);
 				checkbox_7.setState(false);
 				checkbox_8.setState(false);
-				checkbox_9.setState(false); 
+				checkbox_9.setState(false);
 				checkbox_11.setState(false);
 				checkbox_12.setState(false);
 				checkbox_13.setState(false);
 				checkbox_14.setState(false);
-		    }
+			}
 		});
 
 		checkbox_14 = new Checkbox();
 		getContentPane().add(checkbox_14);
 		checkbox_14.addItemListener(new ItemListener() {
-		    public void itemStateChanged(ItemEvent e) {
-		    	checkbox.setState(false);
+			public void itemStateChanged(ItemEvent e) {
+				checkbox.setState(false);
 				checkbox_1.setState(false);
 				checkbox_2.setState(false);
 				checkbox_3.setState(false);
@@ -495,21 +492,22 @@ public class TestPrepod extends JFrame {
 				checkbox_10.setState(false);
 				checkbox_11.setState(false);
 				checkbox_12.setState(false);
-				checkbox_13.setState(false); 
-		    }
+				checkbox_13.setState(false);
+			}
 		});
-		
+
 		b_vudalutu = new JButton(
 				"\u041F\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0438 \u0432\u0438\u0434\u0430\u043B\u0435\u043D\u043D\u044F");
 		getContentPane().add(b_vudalutu);
-		
+
 		label_2 = new JLabel("");
 		label_2.setIcon(new ImageIcon("res/fon/TestPrepod.png"));
 		label_2.setBounds(0, 0, 794, 572);
 		getContentPane().add(label_2);
-		
+
 		b_vudalutu.addActionListener(new ActionListener() {
 			private Path pathSource;
+
 			public void actionPerformed(ActionEvent e) {
 
 				boolean[] bool = new boolean[16];
@@ -535,7 +533,7 @@ public class TestPrepod extends JFrame {
 				for (int i = 0; i <= 15; i++) {
 
 					if (bool[i] == true) {
-					  
+
 						File F = new File("res/test/result/" + s_choice_klas + "/" + s_choice_tema);
 
 						fList = F.listFiles();
@@ -547,11 +545,11 @@ public class TestPrepod extends JFrame {
 						}
 						////
 
-//						System.out.println("res/test/result/" + s_choice_klas + "/" + s_choice_tema + "/"
-//								+ arrayListDelete.get(i));
+						// System.out.println("res/test/result/" + s_choice_klas
+						// + "/" + s_choice_tema + "/"
+						// + arrayListDelete.get(i));
 						// System.out.println(i + " " + bool[i]);
 						perevirkaNaNull++;
- 
 
 						pathSource = Paths.get("res/test/result/" + s_choice_klas + "/" + s_choice_tema + "/"
 								+ arrayListDelete.get(i));
@@ -559,7 +557,8 @@ public class TestPrepod extends JFrame {
 						do {
 							try {
 								Files.delete(pathSource);
-//								System.out.println("File deleted successfully");
+								// System.out.println("File deleted
+								// successfully");
 							} catch (Exception ex) {
 							}
 						} while (fList[i].isFile());
@@ -575,11 +574,7 @@ public class TestPrepod extends JFrame {
 					ocustutu();
 					paint();
 					paintCheckbox();
-
-//					System.out.println();
-//					System.out.println();
-//					System.out.println();
-
+ 
 				}
 			}
 		});
@@ -632,7 +627,7 @@ public class TestPrepod extends JFrame {
 		fList = F.listFiles();
 
 		textArea_result.setText(null);
-		 
+
 		if (fList.length == 0) {
 			JOptionPane.showMessageDialog(null, "Жодний учень у цьому класы не здавав тест за даною тематикою !");
 		} else {
@@ -683,188 +678,184 @@ public class TestPrepod extends JFrame {
 
 			s_k_vuvestuProfil = "";
 			arrayList.clear();
-			i_dali = 1 ; 
+			i_dali = 1;
 		}
 	}
 
 	void paintCheckbox() {
 
 		try {
-//			if (fList.length == 0) {
-//				JOptionPane.showMessageDialog(null,
-//						"Спочатку оперіть клас та тему, а потім виберіть поля які Ви хочете видалити");
-//			} else {
 
-				switch (fList.length) {
-				case 1: {
-					checkbox.setBounds(752, 61, 12, 12);
-				}
-					break;
-				case 2: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-				}
-					break;
-				case 3: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-				}
-					break;
-				case 4: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-					checkbox_3.setBounds(752, 159, 12, 12);
-				}
-					break;
-				case 5: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-					checkbox_3.setBounds(752, 159, 12, 12);
-					checkbox_4.setBounds(752, 187, 12, 12);
-				}
-					break;
-				case 6: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-					checkbox_3.setBounds(752, 159, 12, 12);
-					checkbox_4.setBounds(752, 187, 12, 12);
-					checkbox_5.setBounds(752, 215, 12, 12);
-				}
-					break;
-				case 7: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-					checkbox_3.setBounds(752, 159, 12, 12);
-					checkbox_4.setBounds(752, 187, 12, 12);
-					checkbox_5.setBounds(752, 215, 12, 12);
-					checkbox_6.setBounds(752, 250, 12, 12);
-				}
-					break;
-				case 8: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-					checkbox_3.setBounds(752, 159, 12, 12);
-					checkbox_4.setBounds(752, 187, 12, 12);
-					checkbox_5.setBounds(752, 215, 12, 12);
-					checkbox_6.setBounds(752, 250, 12, 12);
-					checkbox_7.setBounds(752, 278, 12, 12);
-				}
-					break;
-				case 9: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-					checkbox_3.setBounds(752, 159, 12, 12);
-					checkbox_4.setBounds(752, 187, 12, 12);
-					checkbox_5.setBounds(752, 215, 12, 12);
-					checkbox_6.setBounds(752, 250, 12, 12);
-					checkbox_7.setBounds(752, 278, 12, 12);
-					checkbox_8.setBounds(752, 306, 12, 12);
-				}
-					break;
-				case 10: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-					checkbox_3.setBounds(752, 159, 12, 12);
-					checkbox_4.setBounds(752, 187, 12, 12);
-					checkbox_5.setBounds(752, 215, 12, 12);
-					checkbox_6.setBounds(752, 250, 12, 12);
-					checkbox_7.setBounds(752, 278, 12, 12);
-					checkbox_8.setBounds(752, 306, 12, 12);
-					checkbox_9.setBounds(752, 334, 12, 12);
-				}
-					break;
-				case 11: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-					checkbox_3.setBounds(752, 159, 12, 12);
-					checkbox_4.setBounds(752, 187, 12, 12);
-					checkbox_5.setBounds(752, 215, 12, 12);
-					checkbox_6.setBounds(752, 250, 12, 12);
-					checkbox_7.setBounds(752, 278, 12, 12);
-					checkbox_8.setBounds(752, 306, 12, 12);
-					checkbox_9.setBounds(752, 334, 12, 12);
-					checkbox_10.setBounds(752, 373, 12, 12);
-				}
-					break;
-				case 12: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-					checkbox_3.setBounds(752, 159, 12, 12);
-					checkbox_4.setBounds(752, 187, 12, 12);
-					checkbox_5.setBounds(752, 215, 12, 12);
-					checkbox_6.setBounds(752, 250, 12, 12);
-					checkbox_7.setBounds(752, 278, 12, 12);
-					checkbox_8.setBounds(752, 306, 12, 12);
-					checkbox_9.setBounds(752, 334, 12, 12);
-					checkbox_10.setBounds(752, 373, 12, 12);
-					checkbox_11.setBounds(752, 401, 12, 12);
-				}
-					break;
-				case 13: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-					checkbox_3.setBounds(752, 159, 12, 12);
-					checkbox_4.setBounds(752, 187, 12, 12);
-					checkbox_5.setBounds(752, 215, 12, 12);
-					checkbox_6.setBounds(752, 250, 12, 12);
-					checkbox_7.setBounds(752, 278, 12, 12);
-					checkbox_8.setBounds(752, 306, 12, 12);
-					checkbox_9.setBounds(752, 334, 12, 12);
-					checkbox_10.setBounds(752, 373, 12, 12);
-					checkbox_11.setBounds(752, 401, 12, 12);
-					checkbox_12.setBounds(752, 429, 12, 12);
-				}
-					break;
-				case 14: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-					checkbox_3.setBounds(752, 159, 12, 12);
-					checkbox_4.setBounds(752, 187, 12, 12);
-					checkbox_5.setBounds(752, 215, 12, 12);
-					checkbox_6.setBounds(752, 250, 12, 12);
-					checkbox_7.setBounds(752, 278, 12, 12);
-					checkbox_8.setBounds(752, 306, 12, 12);
-					checkbox_9.setBounds(752, 334, 12, 12);
-					checkbox_10.setBounds(752, 373, 12, 12);
-					checkbox_11.setBounds(752, 401, 12, 12);
-					checkbox_12.setBounds(752, 429, 12, 12);
-					checkbox_13.setBounds(752, 457, 12, 12);
-				}
-					break;
-				default: {
-					checkbox.setBounds(752, 61, 12, 12);
-					checkbox_1.setBounds(752, 96, 12, 12);
-					checkbox_2.setBounds(752, 124, 12, 12);
-					checkbox_3.setBounds(752, 159, 12, 12);
-					checkbox_4.setBounds(752, 187, 12, 12);
-					checkbox_5.setBounds(752, 215, 12, 12);
-					checkbox_6.setBounds(752, 250, 12, 12);
-					checkbox_7.setBounds(752, 278, 12, 12);
-					checkbox_8.setBounds(752, 306, 12, 12);
-					checkbox_9.setBounds(752, 334, 12, 12);
-					checkbox_10.setBounds(752, 373, 12, 12);
-					checkbox_11.setBounds(752, 401, 12, 12);
-					checkbox_12.setBounds(752, 429, 12, 12);
-					checkbox_13.setBounds(752, 457, 12, 12);
-					checkbox_14.setBounds(752, 489, 12, 12);
-				}
-					break;
-				}
+			switch (fList.length) {
+			case 1: {
+				checkbox.setBounds(752, 61, 12, 12);
+			}
+				break;
+			case 2: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+			}
+				break;
+			case 3: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+			}
+				break;
+			case 4: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+				checkbox_3.setBounds(752, 159, 12, 12);
+			}
+				break;
+			case 5: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+				checkbox_3.setBounds(752, 159, 12, 12);
+				checkbox_4.setBounds(752, 187, 12, 12);
+			}
+				break;
+			case 6: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+				checkbox_3.setBounds(752, 159, 12, 12);
+				checkbox_4.setBounds(752, 187, 12, 12);
+				checkbox_5.setBounds(752, 215, 12, 12);
+			}
+				break;
+			case 7: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+				checkbox_3.setBounds(752, 159, 12, 12);
+				checkbox_4.setBounds(752, 187, 12, 12);
+				checkbox_5.setBounds(752, 215, 12, 12);
+				checkbox_6.setBounds(752, 250, 12, 12);
+			}
+				break;
+			case 8: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+				checkbox_3.setBounds(752, 159, 12, 12);
+				checkbox_4.setBounds(752, 187, 12, 12);
+				checkbox_5.setBounds(752, 215, 12, 12);
+				checkbox_6.setBounds(752, 250, 12, 12);
+				checkbox_7.setBounds(752, 278, 12, 12);
+			}
+				break;
+			case 9: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+				checkbox_3.setBounds(752, 159, 12, 12);
+				checkbox_4.setBounds(752, 187, 12, 12);
+				checkbox_5.setBounds(752, 215, 12, 12);
+				checkbox_6.setBounds(752, 250, 12, 12);
+				checkbox_7.setBounds(752, 278, 12, 12);
+				checkbox_8.setBounds(752, 306, 12, 12);
+			}
+				break;
+			case 10: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+				checkbox_3.setBounds(752, 159, 12, 12);
+				checkbox_4.setBounds(752, 187, 12, 12);
+				checkbox_5.setBounds(752, 215, 12, 12);
+				checkbox_6.setBounds(752, 250, 12, 12);
+				checkbox_7.setBounds(752, 278, 12, 12);
+				checkbox_8.setBounds(752, 306, 12, 12);
+				checkbox_9.setBounds(752, 334, 12, 12);
+			}
+				break;
+			case 11: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+				checkbox_3.setBounds(752, 159, 12, 12);
+				checkbox_4.setBounds(752, 187, 12, 12);
+				checkbox_5.setBounds(752, 215, 12, 12);
+				checkbox_6.setBounds(752, 250, 12, 12);
+				checkbox_7.setBounds(752, 278, 12, 12);
+				checkbox_8.setBounds(752, 306, 12, 12);
+				checkbox_9.setBounds(752, 334, 12, 12);
+				checkbox_10.setBounds(752, 373, 12, 12);
+			}
+				break;
+			case 12: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+				checkbox_3.setBounds(752, 159, 12, 12);
+				checkbox_4.setBounds(752, 187, 12, 12);
+				checkbox_5.setBounds(752, 215, 12, 12);
+				checkbox_6.setBounds(752, 250, 12, 12);
+				checkbox_7.setBounds(752, 278, 12, 12);
+				checkbox_8.setBounds(752, 306, 12, 12);
+				checkbox_9.setBounds(752, 334, 12, 12);
+				checkbox_10.setBounds(752, 373, 12, 12);
+				checkbox_11.setBounds(752, 401, 12, 12);
+			}
+				break;
+			case 13: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+				checkbox_3.setBounds(752, 159, 12, 12);
+				checkbox_4.setBounds(752, 187, 12, 12);
+				checkbox_5.setBounds(752, 215, 12, 12);
+				checkbox_6.setBounds(752, 250, 12, 12);
+				checkbox_7.setBounds(752, 278, 12, 12);
+				checkbox_8.setBounds(752, 306, 12, 12);
+				checkbox_9.setBounds(752, 334, 12, 12);
+				checkbox_10.setBounds(752, 373, 12, 12);
+				checkbox_11.setBounds(752, 401, 12, 12);
+				checkbox_12.setBounds(752, 429, 12, 12);
+			}
+				break;
+			case 14: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+				checkbox_3.setBounds(752, 159, 12, 12);
+				checkbox_4.setBounds(752, 187, 12, 12);
+				checkbox_5.setBounds(752, 215, 12, 12);
+				checkbox_6.setBounds(752, 250, 12, 12);
+				checkbox_7.setBounds(752, 278, 12, 12);
+				checkbox_8.setBounds(752, 306, 12, 12);
+				checkbox_9.setBounds(752, 334, 12, 12);
+				checkbox_10.setBounds(752, 373, 12, 12);
+				checkbox_11.setBounds(752, 401, 12, 12);
+				checkbox_12.setBounds(752, 429, 12, 12);
+				checkbox_13.setBounds(752, 457, 12, 12);
+			}
+				break;
+			default: {
+				checkbox.setBounds(752, 61, 12, 12);
+				checkbox_1.setBounds(752, 96, 12, 12);
+				checkbox_2.setBounds(752, 124, 12, 12);
+				checkbox_3.setBounds(752, 159, 12, 12);
+				checkbox_4.setBounds(752, 187, 12, 12);
+				checkbox_5.setBounds(752, 215, 12, 12);
+				checkbox_6.setBounds(752, 250, 12, 12);
+				checkbox_7.setBounds(752, 278, 12, 12);
+				checkbox_8.setBounds(752, 306, 12, 12);
+				checkbox_9.setBounds(752, 334, 12, 12);
+				checkbox_10.setBounds(752, 373, 12, 12);
+				checkbox_11.setBounds(752, 401, 12, 12);
+				checkbox_12.setBounds(752, 429, 12, 12);
+				checkbox_13.setBounds(752, 457, 12, 12);
+				checkbox_14.setBounds(752, 489, 12, 12);
+			}
+				break;
+			}
 
-				b_vudalutu.setBounds(195, 527, 395, 23);
-//			}
+			b_vudalutu.setBounds(195, 527, 395, 23);
+		
 		} catch (Exception e1) {
 		}
 	}

@@ -6,16 +6,16 @@ import java.io.File;
 import java.util.Scanner;
 
 import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import javax.swing.ImageIcon;
 
 public class TestPutanna extends JFrame {
+
+	private static final long serialVersionUID = 1L;
 
 	private Scanner scanner_k_pravulno;
 	private Scanner scanner_k_putanna;
@@ -39,8 +39,8 @@ public class TestPutanna extends JFrame {
 	private String s_k_variant1_1 = "";
 	private String s_k_variant2_1 = "";
 
-	private String vidpovid ;
-	private String vidpovid1 ;
+	private String vidpovid;
+	private String vidpovid1;
 
 	int metka_result = 0;
 	int result = 0;
@@ -63,7 +63,7 @@ public class TestPutanna extends JFrame {
 		button.setForeground(Color.BLACK);
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Menu menu = new Menu("Фізична культура в школі");
+				new Menu("Фізична культура в школі");
 				setVisible(false);
 			}
 		});
@@ -157,43 +157,7 @@ public class TestPutanna extends JFrame {
 		l_putanna0.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
 		l_putanna0.setBounds(33, 33, 751, 29);
 		getContentPane().add(l_putanna0);
-//
-//		JLabel l_variant0_0 = new JLabel(s_k_variant0);
-//		l_variant0_0.setForeground(Color.BLUE);
-//		l_variant0_0.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
-//		l_variant0_0.setBounds(64, 88, 730, 29);
-//		getContentPane().add(l_variant0_0);
-//
-//		JLabel l_variant0_1 = new JLabel(s_k_variant1);
-//		l_variant0_1.setForeground(Color.BLUE);
-//		l_variant0_1.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
-//		l_variant0_1.setBounds(64, 141, 730, 29);
-//		getContentPane().add(l_variant0_1);
-//
-//		JLabel l_variant0_2 = new JLabel(s_k_variant2);
-//		l_variant0_2.setForeground(Color.BLUE);
-//		l_variant0_2.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
-//		l_variant0_2.setBounds(64, 195, 730, 29);
-//		getContentPane().add(l_variant0_2);
-//
-//		JLabel l_variant1_2 = new JLabel(s_k_variant2_1);
-//		l_variant1_2.setForeground(Color.BLUE);
-//		l_variant1_2.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
-//		l_variant1_2.setBounds(64, 447, 730, 29);
-//		getContentPane().add(l_variant1_2);
-//
-//		JLabel l_variant1_1 = new JLabel(s_k_variant1_1);
-//		l_variant1_1.setForeground(Color.BLUE);
-//		l_variant1_1.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
-//		l_variant1_1.setBounds(64, 393, 730, 29);
-//		getContentPane().add(l_variant1_1);
-//
-//		JLabel l_variant1_0 = new JLabel(s_k_variant0_1);
-//		l_variant1_0.setForeground(Color.BLUE);
-//		l_variant1_0.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
-//		l_variant1_0.setBounds(64, 340, 730, 29);
-//		getContentPane().add(l_variant1_0);
-//
+		
 		JLabel l_putanna1 = new JLabel(s_k_putanna_1);
 		l_putanna1.setForeground(Color.BLUE);
 		l_putanna1.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
@@ -217,17 +181,16 @@ public class TestPutanna extends JFrame {
 					}
 
 					metka_result++;
-					
-					
-					if (metka_result == 6 ){ 
+
+					if (metka_result == 6) {
 						setVisible(false);
 					}
-					TestMath testMath = new TestMath(s_choice_klas, s_choice_tema, s_Name, result, metka_result,
-							testNomerPutanna0, testNomerPutanna1, testNomerPutanna2, testNomerPutanna3,
-							testNomerPutanna4, testNomerPutanna5, testNomerPutanna6, testNomerPutanna7,
-							testNomerPutanna8, testNomerPutanna9, testNomerPutanna10, testNomerPutanna11);
+					new TestMath(s_choice_klas, s_choice_tema, s_Name, result, metka_result, testNomerPutanna0,
+							testNomerPutanna1, testNomerPutanna2, testNomerPutanna3, testNomerPutanna4,
+							testNomerPutanna5, testNomerPutanna6, testNomerPutanna7, testNomerPutanna8,
+							testNomerPutanna9, testNomerPutanna10, testNomerPutanna11);
 					setVisible(false);
-					
+
 				} catch (Exception e1) {
 					JOptionPane.showMessageDialog(null, "Відсутня відповідь !");
 				}
@@ -277,7 +240,7 @@ public class TestPutanna extends JFrame {
 		radioButton_1_2.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
 		radioButton_1_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				vidpovid1 = s_k_variant2_1; 
+				vidpovid1 = s_k_variant2_1;
 			}
 		});
 		radioButton_1_2.setBounds(24, 447, 684, 23);
@@ -301,7 +264,7 @@ public class TestPutanna extends JFrame {
 		radioButton_1_0.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
 		radioButton_1_0.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				vidpovid1 = s_k_variant0_1; 
+				vidpovid1 = s_k_variant0_1;
 			}
 		});
 		radioButton_1_0.setBounds(24, 340, 684, 23);
@@ -317,7 +280,7 @@ public class TestPutanna extends JFrame {
 		group1.add(radioButton_1_2);
 		group1.add(radioButton_1_1);
 		group1.add(radioButton_1_0);
-		
+
 		JLabel label = new JLabel("");
 		label.setIcon(new ImageIcon("res/fon/TestPutanna.png"));
 		label.setBounds(0, 0, 794, 572);

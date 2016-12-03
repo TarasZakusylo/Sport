@@ -16,6 +16,9 @@ import javax.swing.SwingConstants;
 import javax.swing.ImageIcon;
 
 public class TestResult extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	
 	private JLabel l_Tema_Klas;
 	String Result = "";
 
@@ -25,8 +28,7 @@ public class TestResult extends JFrame {
 	private Formatter formatter_k_negatuvnuh;
 	private Formatter formatter_k_dobre;
 	private Formatter formatter_k_serednih;
-	private Formatter formatter_seredniy_bal;
-
+	
 	private Scanner scanner_k_pozutuvnuh;
 	private Scanner scanner_k_negatuvnuh;
 	private Scanner scanner_k_dobre;
@@ -76,7 +78,7 @@ public class TestResult extends JFrame {
 		btnNewButton.setForeground(Color.MAGENTA);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Test test = new Test();
+				new Test();
 				setVisible(false);
 			}
 		});
@@ -88,7 +90,7 @@ public class TestResult extends JFrame {
 		button.setForeground(Color.MAGENTA);
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Menu menu = new Menu("Фізична культура в школі");
+				new Menu("Фізична культура в школі");
 				setVisible(false);
 			}
 		});

@@ -5,15 +5,17 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
-import javax.swing.ImageIcon;
 
 public class Test extends JFrame {
+
+	private static final long serialVersionUID = 1L;
 
 	private JTextField t_Name;
 	private Choice choice_tema;
@@ -165,15 +167,15 @@ public class Test extends JFrame {
 					do {
 						String s_password = JOptionPane.showInputDialog(null,
 								"Ви намагаєтесь отримати доступ до інформації вчителя.\nВведіть, будь ласка, пароль:");
-						
+
 						if (s_password.equals("1")) {
 							k = 1;
-							TestPrepod testPrepod = new TestPrepod () ;
+							new TestPrepod();
 							setVisible(false);
 						} else {
 							JOptionPane.showMessageDialog(null, "Помилка введення !");
 						}
-						
+
 					} while (k != 1);
 
 				} catch (Exception e) {
@@ -183,7 +185,7 @@ public class Test extends JFrame {
 		});
 		btnNewButton.setBounds(695, 510, 89, 51);
 		getContentPane().add(btnNewButton);
-		
+
 		JLabel label_4 = new JLabel("");
 		label_4.setIcon(new ImageIcon("res/fon/Test.png"));
 		label_4.setBounds(0, 0, 794, 572);
