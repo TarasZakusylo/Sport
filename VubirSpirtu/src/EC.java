@@ -11,6 +11,7 @@ import javax.swing.JSlider;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import javax.swing.ImageIcon;
  
 public class EC extends JFrame {
 
@@ -76,16 +77,18 @@ public class EC extends JFrame {
 		l_komentar1.setBounds(-1, 537, 785, 14);
 		
 		 sl_putanna0 = new JSlider(0, 1, 5, i_sl_putanna0);
+		 sl_putanna0.setPaintLabels(true);
+		 sl_putanna0.setPaintTicks(true);
+		 sl_putanna0.setOpaque(false);
 		getContentPane().add(l_komentar1);
 		sl_putanna0.setMinorTickSpacing(1);
-		sl_putanna0.setPaintTicks(true);
-		sl_putanna0.setPaintLabels(true);		
 		sl_putanna0.setBounds(35,136,715,40);
 		 getContentPane().add(sl_putanna0);
 		 
 		  sl_putanna1 = new JSlider(SwingConstants.HORIZONTAL, 1, 5, i_sl_putanna1);
 		 sl_putanna1.setPaintTicks(true);
 		 sl_putanna1.setPaintLabels(true);
+		 sl_putanna1.setOpaque(false);
 		 sl_putanna1.setMinorTickSpacing(1);
 		 sl_putanna1.setBounds(35, 230, 715, 40);
 		 getContentPane().add(sl_putanna1);
@@ -93,6 +96,7 @@ public class EC extends JFrame {
 		  sl_putanna2 = new JSlider(SwingConstants.HORIZONTAL, 1, 5, i_sl_putanna2);
 		 sl_putanna2.setPaintTicks(true);
 		 sl_putanna2.setPaintLabels(true);
+		 sl_putanna2.setOpaque(false);
 		 sl_putanna2.setMinorTickSpacing(1);
 		 sl_putanna2.setBounds(35, 332, 715, 40);
 		 getContentPane().add(sl_putanna2);
@@ -100,6 +104,7 @@ public class EC extends JFrame {
 		  sl_putanna3 = new JSlider(SwingConstants.HORIZONTAL, 1, 5, i_sl_putanna3);
 		 sl_putanna3.setPaintTicks(true);
 		 sl_putanna3.setPaintLabels(true);
+		 sl_putanna3.setOpaque(false);
 		 sl_putanna3.setMinorTickSpacing(1);
 		 sl_putanna3.setBounds(35, 451, 715, 40);
 		 getContentPane().add(sl_putanna3);
@@ -242,6 +247,11 @@ public class EC extends JFrame {
 		 });
 		 b_vpered0.setBounds(643, 526, 141, 36);
 		 getContentPane().add(b_vpered0);
+		 
+		 JLabel label_20 = new JLabel("");
+		 label_20.setIcon(new ImageIcon("res/fon/EC.png"));
+		 label_20.setBounds(-1, 0, 794, 572);
+		 getContentPane().add(label_20);
 
 		 
 		setVisible(true);

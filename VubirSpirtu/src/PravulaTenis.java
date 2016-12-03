@@ -99,7 +99,7 @@ public class PravulaTenis extends JFrame {
 		JLabel label = new JLabel("\u041D\u0430\u0442\u0438\u0441\u043D\u0456\u0442\u044C, \u0431\u0443\u0434\u044C \u043B\u0430\u0441\u043A\u0430, \u043D\u0430 \u043D\u0430\u043F\u0438\u0441 \u0434\u043B\u044F \u043F\u0435\u0440\u0435\u0433\u043B\u044F\u0434\u0443 \u0446\u0456\u043A\u0430\u0432\u043E\u0457 \u0432\u0430\u043C \u0440\u0443\u0431\u0440\u0438\u043A\u0438");
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		label.setForeground(Color.MAGENTA);
-		label.setFont(new Font("Verdana", Font.ITALIC, 15));
+		label.setFont(new Font("Verdana", Font.BOLD, 15));
 		label.setBounds(10, 455, 769, 29);
 		panel_taktika.add(label);
 		
@@ -207,7 +207,19 @@ public class PravulaTenis extends JFrame {
 		label_7.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 20));
 		label_7.setBounds(46, 26, 226, 20);
 		panel_taktika.add(label_7);
+		
+		JLabel label_8 = new JLabel("");
+		label_8.setIcon(new ImageIcon("res/fon/PravulaTenis.png"));
+		label_8.setVerticalAlignment(SwingConstants.TOP);
+		label_8.setBounds(0, 0, 789, 484);
+		panel_taktika.add(label_8);
 
+		
+		JLabel label_61 = new JLabel("");
+		label_61.setIcon(new ImageIcon("res/fon/Pravula.png"));
+		label_61.setBounds(0, 0, 794, 572);
+		getContentPane().add(label_61);
+		
 		setVisible(true);
 
 	}

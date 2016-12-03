@@ -11,6 +11,7 @@ import javax.swing.JSlider;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import javax.swing.ImageIcon;
 
  
 public class EC2 extends JFrame {
@@ -75,6 +76,7 @@ public class EC2 extends JFrame {
 		
 		 sl_putanna8 = new JSlider(0, 1, 5, i_sl_putanna8);
 		getContentPane().add(l_komentar1);
+		sl_putanna8.setOpaque(false);
 		sl_putanna8.setMinorTickSpacing(1);
 		sl_putanna8.setPaintTicks(true);
 		sl_putanna8.setPaintLabels(true);		
@@ -84,6 +86,7 @@ public class EC2 extends JFrame {
 		  sl_putanna9 = new JSlider(SwingConstants.HORIZONTAL, 1, 5, i_sl_putanna9);
 		  sl_putanna9.setPaintTicks(true);
 		  sl_putanna9.setPaintLabels(true);
+		  sl_putanna9.setOpaque(false);
 		  sl_putanna9.setMinorTickSpacing(1);
 		 sl_putanna9.setBounds(35, 230, 715, 40);
 		 getContentPane().add(sl_putanna9);
@@ -91,6 +94,7 @@ public class EC2 extends JFrame {
 		  sl_putanna10 = new JSlider(SwingConstants.HORIZONTAL, 1, 5, i_sl_putanna10);
 		  sl_putanna10.setPaintTicks(true);
 		  sl_putanna10.setPaintLabels(true);
+		  sl_putanna10.setOpaque(false);
 		  sl_putanna10.setMinorTickSpacing(1);
 		  sl_putanna10.setBounds(35, 332, 715, 40);
 		 getContentPane().add(sl_putanna10);
@@ -98,6 +102,7 @@ public class EC2 extends JFrame {
 		  sl_putanna11 = new JSlider(SwingConstants.HORIZONTAL, 1, 5, i_sl_putanna11);
 		  sl_putanna11.setPaintTicks(true);
 		  sl_putanna11.setPaintLabels(true);
+		  sl_putanna11.setOpaque(false);
 		  sl_putanna11.setMinorTickSpacing(1);
 		  sl_putanna11.setBounds(35, 451, 715, 40);
 		 getContentPane().add(sl_putanna11);
@@ -253,6 +258,11 @@ public class EC2 extends JFrame {
 			 });
 		 b_nazad1.setBounds(-1, 526, 141, 36);
 		 getContentPane().add(b_nazad1);
+		 
+		 JLabel label_20 = new JLabel("");
+		 label_20.setIcon(new ImageIcon("res/fon/EC2.png"));
+		 label_20.setBounds(-10, 0, 794, 572);
+		 getContentPane().add(label_20);
 		 		 
 		  
 

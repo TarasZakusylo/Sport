@@ -118,7 +118,7 @@ public class PravulaMenu extends JFrame{
 	    	button_3.addActionListener(new ActionListener() {
 	    		public void actionPerformed(ActionEvent arg0) {
 
-	    			Atletik atletik  = new Atletik () ;
+	    			PravulaAtletik atletik  = new PravulaAtletik () ;
  	    			setVisible(false);
 	    		}
 	    	});

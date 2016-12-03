@@ -114,6 +114,11 @@ public class Vpravu extends JFrame{
 	    	btnNewButton_1.setBounds(10, 531, 243, 23);
 	    	getContentPane().add(btnNewButton_1);
 	    	
+	    	JLabel label = new JLabel("");
+	    	label.setIcon(new ImageIcon("res/fon/Vpravu.png"));
+	    	label.setBounds(0, 0, 784, 562);
+	    	getContentPane().add(label);
+	    	
 	    	setVisible(true);
 		 
 		

@@ -207,6 +207,17 @@ public class PravulaBasketbol extends JFrame {
 		label_7.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 20));
 		label_7.setBounds(46, 26, 226, 20);
 		panel_taktika.add(label_7);
+		
+		JLabel label_8 = new JLabel("");
+		label_8.setIcon(new ImageIcon("res/fon/PravulaBasketbol.png"));
+		label_8.setVerticalAlignment(SwingConstants.TOP);
+		label_8.setBounds(0, 0, 789, 484);
+		panel_taktika.add(label_8);
+		
+		JLabel label_61 = new JLabel("");
+		label_61.setIcon(new ImageIcon("res/fon/Pravula.png"));
+		label_61.setBounds(0, 0, 794, 572);
+		getContentPane().add(label_61);
 
 		setVisible(true);
 

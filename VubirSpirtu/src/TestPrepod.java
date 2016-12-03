@@ -21,6 +21,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingConstants;
+import javax.swing.ImageIcon;
 
 public class TestPrepod extends JFrame {
 
@@ -70,9 +71,10 @@ public class TestPrepod extends JFrame {
 	private JTextArea textArea_result;
 	
 	int i_dali = 0; 
+	private JLabel label_2;
 
 	public TestPrepod() {
-
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(800, 600);
 		setResizable(false);
@@ -105,7 +107,7 @@ public class TestPrepod extends JFrame {
 		JLabel label = new JLabel(
 				"\u0414\u043B\u044F \u043F\u0435\u0440\u0435\u0433\u043B\u044F\u0434\u0443 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u0456\u0432 \u0443\u0447\u043D\u0456\u0432 \u0432\u043A\u0430\u0436\u0456\u0442\u044C \u043A\u043B\u0430\u0441 \u0442\u0430 \u0442\u0435\u043C\u0443:");
 		label.setHorizontalAlignment(SwingConstants.CENTER);
-		label.setForeground(Color.BLUE);
+		label.setForeground(Color.ORANGE);
 		label.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 20));
 		label.setBounds(5, 27, 523, 23);
 		getContentPane().add(label);
@@ -500,6 +502,12 @@ public class TestPrepod extends JFrame {
 		b_vudalutu = new JButton(
 				"\u041F\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0438 \u0432\u0438\u0434\u0430\u043B\u0435\u043D\u043D\u044F");
 		getContentPane().add(b_vudalutu);
+		
+		label_2 = new JLabel("");
+		label_2.setIcon(new ImageIcon("res/fon/TestPrepod.png"));
+		label_2.setBounds(0, 0, 794, 572);
+		getContentPane().add(label_2);
+		
 		b_vudalutu.addActionListener(new ActionListener() {
 			private Path pathSource;
 			public void actionPerformed(ActionEvent e) {
@@ -689,168 +697,168 @@ public class TestPrepod extends JFrame {
 
 				switch (fList.length) {
 				case 1: {
-					checkbox.setBounds(752, 61, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
 				}
 					break;
 				case 2: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
 				}
 					break;
 				case 3: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
 				}
 					break;
 				case 4: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
-					checkbox_3.setBounds(752, 159, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
+					checkbox_3.setBounds(752, 159, 12, 12);
 				}
 					break;
 				case 5: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
-					checkbox_3.setBounds(752, 159, 12, 22);
-					checkbox_4.setBounds(752, 187, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
+					checkbox_3.setBounds(752, 159, 12, 12);
+					checkbox_4.setBounds(752, 187, 12, 12);
 				}
 					break;
 				case 6: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
-					checkbox_3.setBounds(752, 159, 12, 22);
-					checkbox_4.setBounds(752, 187, 12, 22);
-					checkbox_5.setBounds(752, 215, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
+					checkbox_3.setBounds(752, 159, 12, 12);
+					checkbox_4.setBounds(752, 187, 12, 12);
+					checkbox_5.setBounds(752, 215, 12, 12);
 				}
 					break;
 				case 7: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
-					checkbox_3.setBounds(752, 159, 12, 22);
-					checkbox_4.setBounds(752, 187, 12, 22);
-					checkbox_5.setBounds(752, 215, 12, 22);
-					checkbox_6.setBounds(752, 250, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
+					checkbox_3.setBounds(752, 159, 12, 12);
+					checkbox_4.setBounds(752, 187, 12, 12);
+					checkbox_5.setBounds(752, 215, 12, 12);
+					checkbox_6.setBounds(752, 250, 12, 12);
 				}
 					break;
 				case 8: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
-					checkbox_3.setBounds(752, 159, 12, 22);
-					checkbox_4.setBounds(752, 187, 12, 22);
-					checkbox_5.setBounds(752, 215, 12, 22);
-					checkbox_6.setBounds(752, 250, 12, 22);
-					checkbox_7.setBounds(752, 278, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
+					checkbox_3.setBounds(752, 159, 12, 12);
+					checkbox_4.setBounds(752, 187, 12, 12);
+					checkbox_5.setBounds(752, 215, 12, 12);
+					checkbox_6.setBounds(752, 250, 12, 12);
+					checkbox_7.setBounds(752, 278, 12, 12);
 				}
 					break;
 				case 9: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
-					checkbox_3.setBounds(752, 159, 12, 22);
-					checkbox_4.setBounds(752, 187, 12, 22);
-					checkbox_5.setBounds(752, 215, 12, 22);
-					checkbox_6.setBounds(752, 250, 12, 22);
-					checkbox_7.setBounds(752, 278, 12, 22);
-					checkbox_8.setBounds(752, 306, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
+					checkbox_3.setBounds(752, 159, 12, 12);
+					checkbox_4.setBounds(752, 187, 12, 12);
+					checkbox_5.setBounds(752, 215, 12, 12);
+					checkbox_6.setBounds(752, 250, 12, 12);
+					checkbox_7.setBounds(752, 278, 12, 12);
+					checkbox_8.setBounds(752, 306, 12, 12);
 				}
 					break;
 				case 10: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
-					checkbox_3.setBounds(752, 159, 12, 22);
-					checkbox_4.setBounds(752, 187, 12, 22);
-					checkbox_5.setBounds(752, 215, 12, 22);
-					checkbox_6.setBounds(752, 250, 12, 22);
-					checkbox_7.setBounds(752, 278, 12, 22);
-					checkbox_8.setBounds(752, 306, 12, 22);
-					checkbox_9.setBounds(752, 334, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
+					checkbox_3.setBounds(752, 159, 12, 12);
+					checkbox_4.setBounds(752, 187, 12, 12);
+					checkbox_5.setBounds(752, 215, 12, 12);
+					checkbox_6.setBounds(752, 250, 12, 12);
+					checkbox_7.setBounds(752, 278, 12, 12);
+					checkbox_8.setBounds(752, 306, 12, 12);
+					checkbox_9.setBounds(752, 334, 12, 12);
 				}
 					break;
 				case 11: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
-					checkbox_3.setBounds(752, 159, 12, 22);
-					checkbox_4.setBounds(752, 187, 12, 22);
-					checkbox_5.setBounds(752, 215, 12, 22);
-					checkbox_6.setBounds(752, 250, 12, 22);
-					checkbox_7.setBounds(752, 278, 12, 22);
-					checkbox_8.setBounds(752, 306, 12, 22);
-					checkbox_9.setBounds(752, 334, 12, 22);
-					checkbox_10.setBounds(752, 373, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
+					checkbox_3.setBounds(752, 159, 12, 12);
+					checkbox_4.setBounds(752, 187, 12, 12);
+					checkbox_5.setBounds(752, 215, 12, 12);
+					checkbox_6.setBounds(752, 250, 12, 12);
+					checkbox_7.setBounds(752, 278, 12, 12);
+					checkbox_8.setBounds(752, 306, 12, 12);
+					checkbox_9.setBounds(752, 334, 12, 12);
+					checkbox_10.setBounds(752, 373, 12, 12);
 				}
 					break;
 				case 12: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
-					checkbox_3.setBounds(752, 159, 12, 22);
-					checkbox_4.setBounds(752, 187, 12, 22);
-					checkbox_5.setBounds(752, 215, 12, 22);
-					checkbox_6.setBounds(752, 250, 12, 22);
-					checkbox_7.setBounds(752, 278, 12, 22);
-					checkbox_8.setBounds(752, 306, 12, 22);
-					checkbox_9.setBounds(752, 334, 12, 22);
-					checkbox_10.setBounds(752, 373, 12, 22);
-					checkbox_11.setBounds(752, 401, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
+					checkbox_3.setBounds(752, 159, 12, 12);
+					checkbox_4.setBounds(752, 187, 12, 12);
+					checkbox_5.setBounds(752, 215, 12, 12);
+					checkbox_6.setBounds(752, 250, 12, 12);
+					checkbox_7.setBounds(752, 278, 12, 12);
+					checkbox_8.setBounds(752, 306, 12, 12);
+					checkbox_9.setBounds(752, 334, 12, 12);
+					checkbox_10.setBounds(752, 373, 12, 12);
+					checkbox_11.setBounds(752, 401, 12, 12);
 				}
 					break;
 				case 13: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
-					checkbox_3.setBounds(752, 159, 12, 22);
-					checkbox_4.setBounds(752, 187, 12, 22);
-					checkbox_5.setBounds(752, 215, 12, 22);
-					checkbox_6.setBounds(752, 250, 12, 22);
-					checkbox_7.setBounds(752, 278, 12, 22);
-					checkbox_8.setBounds(752, 306, 12, 22);
-					checkbox_9.setBounds(752, 334, 12, 22);
-					checkbox_10.setBounds(752, 373, 12, 22);
-					checkbox_11.setBounds(752, 401, 12, 22);
-					checkbox_12.setBounds(752, 429, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
+					checkbox_3.setBounds(752, 159, 12, 12);
+					checkbox_4.setBounds(752, 187, 12, 12);
+					checkbox_5.setBounds(752, 215, 12, 12);
+					checkbox_6.setBounds(752, 250, 12, 12);
+					checkbox_7.setBounds(752, 278, 12, 12);
+					checkbox_8.setBounds(752, 306, 12, 12);
+					checkbox_9.setBounds(752, 334, 12, 12);
+					checkbox_10.setBounds(752, 373, 12, 12);
+					checkbox_11.setBounds(752, 401, 12, 12);
+					checkbox_12.setBounds(752, 429, 12, 12);
 				}
 					break;
 				case 14: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
-					checkbox_3.setBounds(752, 159, 12, 22);
-					checkbox_4.setBounds(752, 187, 12, 22);
-					checkbox_5.setBounds(752, 215, 12, 22);
-					checkbox_6.setBounds(752, 250, 12, 22);
-					checkbox_7.setBounds(752, 278, 12, 22);
-					checkbox_8.setBounds(752, 306, 12, 22);
-					checkbox_9.setBounds(752, 334, 12, 22);
-					checkbox_10.setBounds(752, 373, 12, 22);
-					checkbox_11.setBounds(752, 401, 12, 22);
-					checkbox_12.setBounds(752, 429, 12, 22);
-					checkbox_13.setBounds(752, 457, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
+					checkbox_3.setBounds(752, 159, 12, 12);
+					checkbox_4.setBounds(752, 187, 12, 12);
+					checkbox_5.setBounds(752, 215, 12, 12);
+					checkbox_6.setBounds(752, 250, 12, 12);
+					checkbox_7.setBounds(752, 278, 12, 12);
+					checkbox_8.setBounds(752, 306, 12, 12);
+					checkbox_9.setBounds(752, 334, 12, 12);
+					checkbox_10.setBounds(752, 373, 12, 12);
+					checkbox_11.setBounds(752, 401, 12, 12);
+					checkbox_12.setBounds(752, 429, 12, 12);
+					checkbox_13.setBounds(752, 457, 12, 12);
 				}
 					break;
 				default: {
-					checkbox.setBounds(752, 61, 12, 22);
-					checkbox_1.setBounds(752, 96, 12, 22);
-					checkbox_2.setBounds(752, 124, 12, 22);
-					checkbox_3.setBounds(752, 159, 12, 22);
-					checkbox_4.setBounds(752, 187, 12, 22);
-					checkbox_5.setBounds(752, 215, 12, 22);
-					checkbox_6.setBounds(752, 250, 12, 22);
-					checkbox_7.setBounds(752, 278, 12, 22);
-					checkbox_8.setBounds(752, 306, 12, 22);
-					checkbox_9.setBounds(752, 334, 12, 22);
-					checkbox_10.setBounds(752, 373, 12, 22);
-					checkbox_11.setBounds(752, 401, 12, 22);
-					checkbox_12.setBounds(752, 429, 12, 22);
-					checkbox_13.setBounds(752, 457, 12, 22);
-					checkbox_14.setBounds(752, 489, 12, 22);
+					checkbox.setBounds(752, 61, 12, 12);
+					checkbox_1.setBounds(752, 96, 12, 12);
+					checkbox_2.setBounds(752, 124, 12, 12);
+					checkbox_3.setBounds(752, 159, 12, 12);
+					checkbox_4.setBounds(752, 187, 12, 12);
+					checkbox_5.setBounds(752, 215, 12, 12);
+					checkbox_6.setBounds(752, 250, 12, 12);
+					checkbox_7.setBounds(752, 278, 12, 12);
+					checkbox_8.setBounds(752, 306, 12, 12);
+					checkbox_9.setBounds(752, 334, 12, 12);
+					checkbox_10.setBounds(752, 373, 12, 12);
+					checkbox_11.setBounds(752, 401, 12, 12);
+					checkbox_12.setBounds(752, 429, 12, 12);
+					checkbox_13.setBounds(752, 457, 12, 12);
+					checkbox_14.setBounds(752, 489, 12, 12);
 				}
 					break;
 				}

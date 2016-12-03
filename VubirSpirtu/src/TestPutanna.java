@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.ImageIcon;
 
 public class TestPutanna extends JFrame {
 
@@ -232,7 +233,7 @@ public class TestPutanna extends JFrame {
 				}
 			}
 		});
-		btnNewButton.setBounds(116, 535, 560, 37);
+		btnNewButton.setBounds(0, 535, 794, 37);
 		getContentPane().add(btnNewButton);
 
 		JRadioButton radioButton = new JRadioButton(s_k_variant0);
@@ -244,6 +245,7 @@ public class TestPutanna extends JFrame {
 			}
 		});
 		radioButton.setBounds(24, 92, 684, 25);
+		radioButton.setOpaque(false);
 		getContentPane().add(radioButton);
 
 		JRadioButton radioButton_1 = new JRadioButton(s_k_variant1);
@@ -255,6 +257,7 @@ public class TestPutanna extends JFrame {
 			}
 		});
 		radioButton_1.setBounds(24, 145, 684, 23);
+		radioButton_1.setOpaque(false);
 		getContentPane().add(radioButton_1);
 
 		JRadioButton radioButton_2 = new JRadioButton(s_k_variant2);
@@ -266,6 +269,7 @@ public class TestPutanna extends JFrame {
 			}
 		});
 		radioButton_2.setBounds(24, 199, 684, 23);
+		radioButton_2.setOpaque(false);
 		getContentPane().add(radioButton_2);
 
 		JRadioButton radioButton_1_2 = new JRadioButton(s_k_variant2_1);
@@ -277,6 +281,7 @@ public class TestPutanna extends JFrame {
 			}
 		});
 		radioButton_1_2.setBounds(24, 447, 684, 23);
+		radioButton_1_2.setOpaque(false);
 		getContentPane().add(radioButton_1_2);
 
 		JRadioButton radioButton_1_1 = new JRadioButton(s_k_variant1_1);
@@ -288,6 +293,7 @@ public class TestPutanna extends JFrame {
 			}
 		});
 		radioButton_1_1.setBounds(24, 393, 684, 23);
+		radioButton_1_1.setOpaque(false);
 		getContentPane().add(radioButton_1_1);
 
 		JRadioButton radioButton_1_0 = new JRadioButton(s_k_variant0_1);
@@ -299,6 +305,7 @@ public class TestPutanna extends JFrame {
 			}
 		});
 		radioButton_1_0.setBounds(24, 340, 684, 23);
+		radioButton_1_0.setOpaque(false);
 		getContentPane().add(radioButton_1_0);
 
 		ButtonGroup group = new ButtonGroup();
@@ -310,6 +317,11 @@ public class TestPutanna extends JFrame {
 		group1.add(radioButton_1_2);
 		group1.add(radioButton_1_1);
 		group1.add(radioButton_1_0);
+		
+		JLabel label = new JLabel("");
+		label.setIcon(new ImageIcon("res/fon/TestPutanna.png"));
+		label.setBounds(0, 0, 794, 572);
+		getContentPane().add(label);
 
 		setVisible(true);
 

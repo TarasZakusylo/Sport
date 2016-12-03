@@ -7,6 +7,7 @@ import javax.swing.JButton;
 import javax.swing.SwingConstants;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
 
 public class Menu extends JFrame {
  
@@ -19,14 +20,12 @@ public class Menu extends JFrame {
     	setLocationRelativeTo(null);
     	getContentPane().setLayout(null);   
         	
-//    	System.out.println(getSize().height + "   " +getSize().width);
-
     	JLabel l_nazva = new JLabel("\u0424\u0456\u0437\u0438\u0447\u043D\u0430 \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u0430 \u0443 \u0448\u043A\u043E\u043B\u0456");
     	l_nazva.setHorizontalAlignment(SwingConstants.CENTER);
     	l_nazva.setBounds(10, 11, 763  , 57 );
     	getContentPane().add(l_nazva);
-    	l_nazva.setFont(new Font("Serif",Font.ITALIC|Font.BOLD,40));
-    	l_nazva.setForeground(Color.blue);
+    	l_nazva.setFont(new Font("Segoe Script", Font.BOLD | Font.ITALIC, 40));
+    	l_nazva.setForeground(Color.GREEN);
     	
     	JButton b_EC = new JButton("\u042F\u043A\u0438\u0439 \u0432\u0438\u0434 \u0441\u043F\u043E\u0440\u0442\u0443 \u0412\u0430\u043C \u043F\u0456\u0434\u0445\u043E\u0434\u0438\u0442\u044C ?");
     	b_EC.addActionListener(new ActionListener() {
@@ -104,6 +103,11 @@ public class Menu extends JFrame {
     	b_Statustuka.setForeground(Color.MAGENTA);
     	b_Statustuka.setBounds(30, 364, 721, 37);
     	getContentPane().add(b_Statustuka);
+    	
+    	JLabel lblNewLabel = new JLabel("");
+    	lblNewLabel.setIcon(new ImageIcon("res/fon/menu.png"));
+    	lblNewLabel.setBounds(0, 0, 794, 572);
+    	getContentPane().add(lblNewLabel);
     
     	setVisible(true);
     	

@@ -40,7 +40,7 @@ public class Test extends JFrame {
 		getContentPane().add(button);
 
 		choice_klas = new Choice();
-		choice_klas.setBounds(484, 101, 68, 30);
+		choice_klas.setBounds(483, 58, 68, 30);
 		getContentPane().add(choice_klas);
 		choice_klas.add("5");
 		choice_klas.add("6");
@@ -49,13 +49,13 @@ public class Test extends JFrame {
 		JLabel label = new JLabel("\u0412\u043A\u0430\u0436\u0456\u0442\u044C \u043A\u043B\u0430\u0441:");
 		label.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 25));
 		label.setForeground(Color.BLUE);
-		label.setBounds(239, 98, 221, 23);
+		label.setBounds(239, 58, 221, 23);
 		getContentPane().add(label);
 
 		JLabel label_1 = new JLabel("\u0412\u043A\u0430\u0436\u0456\u0442\u044C \u0442\u0435\u043C\u0443:");
 		label_1.setForeground(Color.BLUE);
 		label_1.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 26));
-		label_1.setBounds(202, 169, 221, 23);
+		label_1.setBounds(200, 102, 221, 23);
 		getContentPane().add(label_1);
 
 		JLabel label_2 = new JLabel(
@@ -63,7 +63,7 @@ public class Test extends JFrame {
 		label_2.setForeground(Color.BLUE);
 		label_2.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 30));
 		label_2.setHorizontalAlignment(SwingConstants.CENTER);
-		label_2.setBounds(10, 243, 774, 35);
+		label_2.setBounds(20, 405, 774, 35);
 		getContentPane().add(label_2);
 
 		JButton b_gotovo = new JButton("\u0413\u043E\u0442\u043E\u0432\u043E");
@@ -132,7 +132,7 @@ public class Test extends JFrame {
 		});
 		b_gotovo.setForeground(Color.GREEN);
 		b_gotovo.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 25));
-		b_gotovo.setBounds(256, 359, 273, 51);
+		b_gotovo.setBounds(259, 485, 273, 51);
 		getContentPane().add(b_gotovo);
 
 		JLabel label_3 = new JLabel(
@@ -145,12 +145,12 @@ public class Test extends JFrame {
 
 		t_Name = new JTextField();
 		t_Name.setHorizontalAlignment(SwingConstants.CENTER);
-		t_Name.setBounds(228, 304, 324, 23);
+		t_Name.setBounds(228, 451, 324, 23);
 		getContentPane().add(t_Name);
 		t_Name.setColumns(10);
 
 		choice_tema = new Choice();
-		choice_tema.setBounds(450, 169, 134, 23);
+		choice_tema.setBounds(442, 102, 134, 23);
 		getContentPane().add(choice_tema);
 
 		JButton btnNewButton = new JButton();
@@ -183,6 +183,11 @@ public class Test extends JFrame {
 		});
 		btnNewButton.setBounds(695, 510, 89, 51);
 		getContentPane().add(btnNewButton);
+		
+		JLabel label_4 = new JLabel("");
+		label_4.setIcon(new ImageIcon("res/fon/Test.png"));
+		label_4.setBounds(0, 0, 794, 572);
+		getContentPane().add(label_4);
 
 		choice_tema.add("Волейбол");
 		choice_tema.add("Футбол");

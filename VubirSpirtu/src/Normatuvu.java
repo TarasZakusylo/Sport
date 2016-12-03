@@ -50,6 +50,7 @@ public class Normatuvu extends JFrame{
 		});
 		radioButton.setBounds(10, 25, 109, 23);
 		getContentPane().add(radioButton);
+		radioButton.setOpaque(false);
 		
 		JRadioButton radioButton_1 = new JRadioButton("6");
 		radioButton_1.addActionListener(new ActionListener() {
@@ -58,6 +59,7 @@ public class Normatuvu extends JFrame{
 			}
 		});
 		radioButton_1.setBounds(121, 25, 109, 23);
+		radioButton_1.setOpaque(false);
 		getContentPane().add(radioButton_1);
 		
 		JRadioButton radioButton_2 = new JRadioButton("7");
@@ -67,6 +69,7 @@ public class Normatuvu extends JFrame{
 			}
 		});
 		radioButton_2.setBounds(232, 25, 109, 23);
+		radioButton_2.setOpaque(false);
 		getContentPane().add(radioButton_2);
 		
 		JRadioButton radioButton_3 = new JRadioButton("8");
@@ -76,6 +79,7 @@ public class Normatuvu extends JFrame{
 			}
 		});
 		radioButton_3.setBounds(345, 25, 109, 23);
+		radioButton_3.setOpaque(false);
 		getContentPane().add(radioButton_3);
 		
 		JRadioButton radioButton_4 = new JRadioButton("9");
@@ -85,6 +89,7 @@ public class Normatuvu extends JFrame{
 			}
 		});
 		radioButton_4.setBounds(460, 25, 109, 23);
+		radioButton_4.setOpaque(false);
 		getContentPane().add(radioButton_4);
 		
 		JRadioButton radioButton_5 = new JRadioButton("10");
@@ -94,6 +99,7 @@ public class Normatuvu extends JFrame{
 			}
 		});
 		radioButton_5.setBounds(572, 25, 109, 23);
+		radioButton_5.setOpaque(false);
 		getContentPane().add(radioButton_5);
 		
 		JRadioButton radioButton_6 = new JRadioButton("11");
@@ -103,6 +109,7 @@ public class Normatuvu extends JFrame{
 			}
 		});
 		radioButton_6.setBounds(685, 25, 89, 23);
+		radioButton_6.setOpaque(false);
 		getContentPane().add(radioButton_6);
     	
 		ButtonGroup group1 = new ButtonGroup();
@@ -115,12 +122,19 @@ public class Normatuvu extends JFrame{
 		group1.add(radioButton_6);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 55, 784, 507);
+		scrollPane.setBounds(5, 55, 784, 507);
 		getContentPane().add(scrollPane);
 		
 		lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon("res/fon/Normatuvu1.png"));
 		scrollPane.setViewportView(lblNewLabel_1);
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
+		
+		JLabel label = new JLabel("");
+		label.setForeground(Color.ORANGE);
+		label.setIcon(new ImageIcon("res/fon/Normatuvu.png"));
+		label.setBounds(0, 0, 794, 572);
+		getContentPane().add(label);
 
     	setVisible(true);
 		
