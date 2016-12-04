@@ -47,7 +47,7 @@ public class PravulaMenu extends JFrame {
 	private VpravuSpusok vpravuSpusok;
 	private JList<String> list;
 
-	String s_nazva = "DodattoviVuddSportu/";
+	String s_nazva = "res/DodattoviVuddSportu/";
 	String s_k_vuvestuProfil = "";
 	JTextArea textArea;
 	File folder = new File(s_nazva);

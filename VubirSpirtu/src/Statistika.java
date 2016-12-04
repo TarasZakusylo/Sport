@@ -120,6 +120,7 @@ public class Statistika extends JFrame {
 		lblNewLabel.setForeground(Color.BLUE);
 		lblNewLabel.setFont(new Font("Segoe Script", Font.BOLD, 25));
 		lblNewLabel.setBounds(10, 162, 764, 49);
+		lblNewLabel.setToolTipText("Від 10 - до 12");		
 		getContentPane().add(lblNewLabel);
 
 		JLabel label_1 = new JLabel(
@@ -128,6 +129,7 @@ public class Statistika extends JFrame {
 		label_1.setForeground(Color.BLUE);
 		label_1.setFont(new Font("Segoe Script", Font.BOLD, 25));
 		label_1.setBounds(10, 222, 764, 49);
+		label_1.setToolTipText("Від 7 - до 9");
 		getContentPane().add(label_1);
 
 		JLabel label_2 = new JLabel(
@@ -136,6 +138,7 @@ public class Statistika extends JFrame {
 		label_2.setForeground(Color.BLUE);
 		label_2.setFont(new Font("Segoe Script", Font.BOLD, 25));
 		label_2.setBounds(10, 282, 764, 49);
+		label_2.setToolTipText("Від 4 - до 6");
 		getContentPane().add(label_2);
 
 		JLabel label_3 = new JLabel(
@@ -144,6 +147,7 @@ public class Statistika extends JFrame {
 		label_3.setForeground(Color.BLUE);
 		label_3.setFont(new Font("Segoe Script", Font.BOLD, 25));
 		label_3.setBounds(10, 342, 764, 49);
+		label_3.setToolTipText("Від 1 - до 3");
 		getContentPane().add(label_3);
 
 		JLabel label_4 = new JLabel(

@@ -50,9 +50,9 @@ public class Vpravu extends JFrame {
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(10, 65, 243, 455);
 		getContentPane().add(scrollPane);
-
+		  
 		vpravuSpusok = new VpravuSpusok();
-
+ 
 		list = new JList<String>(vpravuSpusok);
 		list.addMouseListener(new MouseAdapter() {
 			@Override
@@ -110,6 +110,7 @@ public class Vpravu extends JFrame {
 			}
 		});
 		btnNewButton_1.setBounds(10, 531, 243, 23);
+		btnNewButton_1.setToolTipText("Таблиця із рекомендаціями щодо оптимального виконня вправ");
 		getContentPane().add(btnNewButton_1);
 
 		JLabel label = new JLabel("");
